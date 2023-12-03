@@ -1,0 +1,19 @@
+# Configuration for Cog
+build:
+  gpu: true
+  cuda: "11.8"
+  python_version: "3.10"
+  python_packages:
+    - "accelerate==0.24.0"
+    - "diffusers==0.24.0"
+    - "safetensors==0.4.1"
+    - "sentencepiece==0.1.99"
+    - "torch==2.0.1"
+    - "torchvision"
+    - "transformers==4.35.2"
+    - "optimum"
+    - "beautifulsoup4"
+    - "ftfy"
+
+# predict.py defines how predictions are run on your model
+predict: "predict.py:Predictor"
